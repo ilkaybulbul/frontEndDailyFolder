@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 377px; margin: 25px;">
+        <div class="component--search">
+            <form action="">
+                <div class="search-icon">
+                    <img src="img/Group.svg" alt="">
+                </div>
+                <input class="input-1" type="text" placeholder="Start typing to search">
+            </form>
+            <h6>Popular searches</h6>
+            <ul>
+                <li><a href="#">Air Transport</a></li>
+                <li><a href="#">Aviation</a></li>
+                <li class="active"><a href="#">Mekaniske Verksted</a></li>
+                <li><a href="#">Port Authority</a></li>
+                <li><a href="#">Sporvei</a></li>
+                <li><a href="#">Bergens Kreditbank</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 656px; margin: 25px;">
+        <div class="component--filter-search">
+            <form>
+                <div class="input">
+                    <div class="search-icon">
+                        <img src="img/Group.svg" alt="">
+                    </div>
+                    <input type="text" placeholder="Start typing to search">
+                </div>
+                <ul>
+                    <li><label><input type="radio" name="type"><span class="text">Projects</span></label></li>
+                    <li><label><input checked type="radio" name="type"><span class="text">Images</span></label></li>
+                    <li><label><input type="radio" name="type"><span class="text">People</span></label></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div style="width: 468px; height: 316px; margin: 25px;">
+        <div class="component-filter">
+            <form action="">
+                <ul>
+                    <li>
+                        <div class="key">Country</div>
+                        <div class="value">
+                            <label class="selectbox">
+                                <select name="" id="">
+                                    <option value="">Norway</option>
+                                    <option value="">Turkey</option>
+                                </select>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="key">City</div>
+                        <div class="value">
+    
+                                <input value="" placeholder="Bergen"></input>
+                        </div>
+                    </li>
+                   <li class="filter-button">
+                    <a href="#">Cancel</a>
+                    <button type="submit">Apply Filters</button>
+                   </li>
+                   
+                </ul>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

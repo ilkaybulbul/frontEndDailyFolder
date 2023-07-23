@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@0,400;0,600;1,600&display=swap");
+/* line 3, scss/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none; }
+
+/* line 11, scss/main.scss */
+body {
+  background: #303236;
+  font-family: 'Mulish', sans-serif; }
+
+/* line 16, scss/main.scss */
+.component--search {
+  background: #3D3F43;
+  border-radius: 5px;
+  padding: 40px 45px;
+  box-shadow: 0 15px 25px -10px #202125; }
+  /* line 22, scss/main.scss */
+  .component--search form {
+    position: relative;
+    margin-bottom: 30px; }
+    /* line 26, scss/main.scss */
+    .component--search form .search-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 53px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    /* line 37, scss/main.scss */
+    .component--search form .input-1 {
+      padding-left: 53px;
+      height: 50px;
+      width: 100%;
+      border-radius: 5px;
+      background: #303236;
+      border: none;
+      font-size: 16px;
+      color: #FFFFFF; }
+      /* line 47, scss/main.scss */
+      .component--search form .input-1:focus {
+        outline: 0; }
+      /* line 51, scss/main.scss */
+      .component--search form .input-1::placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+  /* line 58, scss/main.scss */
+  .component--search h6 {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  /* line 70, scss/main.scss */
+  .component--search ul li a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 16px; }
+    /* line 77, scss/main.scss */
+    .component--search ul li a:hover {
+      color: #2CCDEA;
+      font-weight: bold; }
+  /* line 82, scss/main.scss */
+  .component--search ul li.active a {
+    color: #2CCDEA;
+    font-weight: bold; }
+
+/* line 91, scss/main.scss */
+.component--filter-search {
+  background: #3D3F43;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px -10px #202125; }
+  /* line 95, scss/main.scss */
+  .component--filter-search form {
+    display: flex;
+    padding: 14px;
+    height: 68px; }
+  /* line 101, scss/main.scss */
+  .component--filter-search ul {
+    display: flex; }
+    /* line 106, scss/main.scss */
+    .component--filter-search ul li label input {
+      display: none; }
+      /* line 108, scss/main.scss */
+      .component--filter-search ul li label input:checked + .text {
+        background: #303236;
+        color: #2CCDEA; }
+    /* line 113, scss/main.scss */
+    .component--filter-search ul li label .text {
+      display: block;
+      height: 40px;
+      padding: 0 25px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #FFFFFF;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: 400ms background-color, 400ms color; }
+  /* line 128, scss/main.scss */
+  .component--filter-search .input {
+    position: relative;
+    flex: 1; }
+    /* line 132, scss/main.scss */
+    .component--filter-search .input .search-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 53px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none; }
+    /* line 146, scss/main.scss */
+    .component--filter-search .input input {
+      padding-left: 53px;
+      height: 40px;
+      width: 100%;
+      border-radius: 5px;
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      color: #FFFFFF; }
+      /* line 156, scss/main.scss */
+      .component--filter-search .input input:focus {
+        outline: 0; }
+      /* line 160, scss/main.scss */
+      .component--filter-search .input input::placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+
+/* line 167, scss/main.scss */
+.component-filter {
+  background: #3D3F43;
+  border-radius: 5px;
+  padding: 40px 45px;
+  box-shadow: 0 15px 25px -10px #202125; }
+  /* line 174, scss/main.scss */
+  .component-filter form ul li {
+    display: flex;
+    align-items: center; }
+    /* line 177, scss/main.scss */
+    .component-filter form ul li:not(:last-child) {
+      margin-bottom: 20px; }
+    /* line 181, scss/main.scss */
+    .component-filter form ul li .key {
+      width: 100px;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold; }
+    /* line 188, scss/main.scss */
+    .component-filter form ul li .value {
+      flex: 1; }
+      /* line 190, scss/main.scss */
+      .component-filter form ul li .value input, .component-filter form ul li .value select {
+        width: 100%;
+        height: 50px;
+        background: #303236;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #FFFFFF;
+        padding: 0 20px; }
+        /* line 200, scss/main.scss */
+        .component-filter form ul li .value input:focus, .component-filter form ul li .value select:focus {
+          outline: 0; }
+        /* line 204, scss/main.scss */
+        .component-filter form ul li .value input::placeholder, .component-filter form ul li .value select::placeholder {
+          color: rgba(255, 255, 255, 0.5); }
+      /* line 210, scss/main.scss */
+      .component-filter form ul li .value .selectbox {
+        position: relative;
+        background: #303236;
+        display: block; }
+        /* line 214, scss/main.scss */
+        .component-filter form ul li .value .selectbox img {
+          position: absolute;
+          top: 50%;
+          right: 25px;
+          transform: translateY(-50%); }
+      /* line 222, scss/main.scss */
+      .component-filter form ul li .value select {
+        appearance: none;
+        background-image: url(/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 98% center; }
+    /* line 229, scss/main.scss */
+    .component-filter form ul li.filter-button {
+      margin-top: 40px;
+      border-top: 1px solid #303236;
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    /* line 237, scss/main.scss */
+    .component-filter form ul li button {
+      height: 50px;
+      width: 153px;
+      background: linear-gradient(to right, #31A5D9, #1E96A0);
+      border-radius: 25px;
+      font-size: 16px;
+      color: #FFFFFF;
+      padding: 0 30px;
+      box-shadow: 0 7px 10px -5px #2B2D30, 0.5;
+      cursor: pointer; }
+    /* line 248, scss/main.scss */
+    .component-filter form ul li a {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none; }
+      /* line 252, scss/main.scss */
+      .component-filter form ul li a:hover {
+        color: #FFFFFF; }
