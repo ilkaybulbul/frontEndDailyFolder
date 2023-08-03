@@ -18,10 +18,12 @@ body {
 
 .component {
 
+    background-color: #1B1B30;
+    border-radius: 10px;
+
     &-help {
-        background-color: #1B1B30;
-        border-radius: 10px;
         padding: 50px 40px;
+        margin-bottom: 25px;
         
         h5 {
             font-size: 36px;
@@ -39,11 +41,73 @@ body {
                 padding: 0 40px 0 75px;
                 font-size: 18px;
                 color:#fff ;
-                background: #454564 url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Ccircle cx='14.1667' cy='14.1667' r='9.91667' stroke='white' stroke-width='2.125' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M29.75 29.75L21.25 21.25' stroke='white' stroke-width='2.125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat 25px;
+                border: 1px solid #454564;
+                background: #2a2a42 url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Ccircle cx='14.1667' cy='14.1667' r='9.91667' stroke='white' stroke-width='2.125' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M29.75 29.75L21.25 21.25' stroke='white' stroke-width='2.125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat 25px;
+
 
                 &::placeholder {
                     color: rgba(#fff, 0.6);
                 }
+            }
+        }
+    }
+
+    &-sidebar {
+        width: 307px;
+        padding: 30px;
+
+        h6 {  
+            color: #BBBBD7;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            ul{
+                li{
+                    a {
+                        display: block;
+                        font-size: 16px;
+                        color: #786CD5;
+                        padding: 6px 0;
+
+                        &:hover {
+                            color: #fff;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        hr {
+            background: #141428;
+            height: 2px;
+            margin: 25px 0;
+
+        }
+
+        p {
+            font-size: 16px;
+            color: #BBBBD7;
+            margin-bottom: 20px;
+            padding-right: 10px;
+        }
+
+        .button {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #786CD5;
+            color:#fff ;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 300ms background-color ease-in-out;
+
+            &:hover {
+                background: #4737bd;
             }
         }
     }
