@@ -8,9 +8,10 @@
 </head>
 <body>
     <div class="component-prices">
+        <input type="checkbox" id="price-switch" checked>
         <div class="title">
             <h3>Choose your plan</h3>
-            <label>
+            <label for="price-switch">
                 <span>Monthly</span>
                 <span>Yearly</span>
             </label>
@@ -20,10 +21,10 @@
                 <h6>Starter</h6>
                 <div class="price-info">
                     <div class="price">
-                        $8.99 / month
+                       <span data-mountly-price="$8.99" data-yearly-price="$5.99"></span>/ month
                     </div>
                     <div class="desciription">
-                        Billed yearly
+                        Billed <span data-mountly-text = "Monthly" data-yearly-text="Yearly"></span>
                     </div>
                     <p>
                         Pretium fusce id velit ut tortor pretium. Sit amet consectetur adipiscing elit ut. Condimentum mattis pellentesque id nibh. Euismod elementum.
@@ -35,10 +36,10 @@
                 <h6>Professional</h6>
                 <div class="price-info">
                     <div class="price">
-                        $21.99 / month
+                        <span data-mountly-price="$21.99" data-yearly-price="$16.99"></span> / month
                     </div>
                     <div class="desciription">
-                        Billed yearly
+                        Billed <span data-mountly-text = "Monthly" data-yearly-text="Yearly"></span>
                     </div>
                     <p>
                         Duis at consectetur lorem donec massa sapien faucibus. Ac placerat vestibulum lectus mauris. 

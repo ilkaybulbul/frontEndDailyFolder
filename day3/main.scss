@@ -17,12 +17,15 @@
 
 body {
     background: #EBEEF2;
-    padding: 20px;
+    padding: 40px;
 }
 
 .component {
 
     &-prices {
+
+        max-width: 920px;
+        margin:  0 auto;
         .title {
             display: flex;
             justify-content: space-between;
@@ -46,6 +49,7 @@ body {
                 align-items: center;
                 position: relative;
                 z-index: 1;
+                cursor: pointer;
 
                 &::before {
                     content: '';
@@ -58,6 +62,8 @@ body {
                     top: 5px;
                     box-shadow: 0 15px 13px -12px rgba(#8693A4, 0.74);
                     z-index: -1;
+                    transition:300ms left ease-in-out;
+
                 }
 
                 span {
@@ -69,6 +75,10 @@ body {
                     font-weight: bold;
                     color: #171922;
                     opacity: .7;
+                    transition: 400ms opacity ease-in-out;
+                    &:first-child {
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -82,6 +92,9 @@ body {
                 margin: 0 20px;
                 background-color: #fff;
                 padding: 45px;
+                display: flex;
+                flex-direction: column;
+                transition: 400ms box-shadow ease-in-out;
 
                 h6 {
                     font-size: 28px;
@@ -96,6 +109,9 @@ body {
                     font-size: 22px;
                     font-weight: bold;
                     color: #171922;
+                    span::before {
+                        content: attr(data-mountly-price);
+                    }
                 }
 
                 .desciription {
@@ -104,6 +120,10 @@ body {
                     color: #171922;
                     opacity: .71;
                     margin-bottom: 30px;
+
+                    span::before {
+                        content: attr(data-mountly-text);
+                    }
                 }
 
                 p {
@@ -111,9 +131,70 @@ body {
                         font-weight: 500;
                         color: #171922;
                         opacity: .71;
+                        margin-bottom: 35px;
+                        line-height: 25px;
+
                         
                 }
+                .button {
+                    height: 60px;
+                    margin-top: auto;
+                    display: grid;
+                    width: 100%;
+                    place-items: center;
+                    border: 1px solid #171922;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #171922;
+                    
+                    transition: 400ms background-color ease-in-out , color ease-in-out;
+ 
+                }
             } 
+            &:hover {
+                box-shadow: 0 19px 50px -20px rgba(#171922, .7);
+               .button {
+                    background-color: #171922;
+                    color: #fff;
+               }
+            }
+            }
+        }
+        #price-switch {
+            display: none;
+            &:checked {
+               & + .title {
+                label {
+                    &::before {
+                        left: 105px;
+
+                    }
+                    span {
+                        &:first-child {
+                            opacity: .7;
+                        }
+                        &:last-child {
+                            opacity: 1;
+                        }
+                    }
+                }
+                & + .packages{
+                         .package {
+                            .price-info {
+                                    .price {
+                                        span:before {
+                                            content: attr(data-yearly-price);
+                                        }
+                                    }
+                                    .desciription {
+                                        span:before {
+                                            content: attr(data-yearly-text);
+                                        }
+                                    }
+                        }
+                    }
+                }
+               } 
             }
         }
        
