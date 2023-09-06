@@ -31,12 +31,10 @@ body {
         font-size: 16px;
         line-height: 25px;
         color: var(--color1);
-
         a {
             display: block;
             text-decoration: underline;
-            color: var(--color1);
-            margin-bottom: 25px;
+            color: var(--color1);  
         }
     }
     
@@ -49,7 +47,7 @@ body {
         .actions {
             display: flex;
             justify-content: flex-end;
-            margin-bottom: 25px;
+            margin-top: 25px;
             a {
                 display: flex;
                 align-items: center;
@@ -112,5 +110,42 @@ body {
         }
        
     }
-   
+    
+    &.style3 {
+        width: 731px;
+        height: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--color2);
+        
+        .icon {
+            fill: var(--color3);
+            margin-right: 45px;
+        }
+        p{
+            font-size: 16px;
+            color: var(--color1);
+            width: 330px;
+            margin-right: 121px;
+        }
+
+        .actions {
+
+            .btn {
+            display: 1;
+            background: var(--color1);
+            padding: 15px 35px;
+            border-radius: 5px;
+            color: var(--color2);
+            font-weight: bold;
+            }
+        }
+
+        &.dark {
+            --color1: #fff;
+            --color2: #10182F;
+            --color3: #fff;
+        }
+   }
 }
