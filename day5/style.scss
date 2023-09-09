@@ -17,15 +17,26 @@
 
 body {
     padding: 10px;
+    background: #d4bebe;
 }
 
 .cookie-banner {
     --color1: #10182F;
     --color2: #fff;
     --color3: #306BF3;
-    box-shadow: 0 15px 45px -12px  rgba(#10182F, .5); 
+    box-shadow: 0 15px 45px -12px  rgba(#10182F, .15); 
     border-radius: 5px;
-    margin: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.8);
+    transition: 500ms all;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        
+    }
 
     p {
         font-size: 16px;
@@ -148,4 +159,49 @@ body {
             --color3: #fff;
         }
    }
+
+   &.position {
+    position: fixed;
+
+    &-tr {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+       }
+    
+       &-tl {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+       }
+    
+       &-br {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+       }
+    
+       &-bl {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+       }
+       
+       &-bc {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%) ;
+       }
+       &-tc {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+       }
+
+   }
+
+   
+
 }
