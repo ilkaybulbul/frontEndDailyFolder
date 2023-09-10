@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    -webkiy-overflow-scrolling: touch;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+body {
+    background: #E7EAFB;
+    padding: 25px;
+}
+
+.job-item {
+    background: #fff;
+    box-shadow: 0 21px 87px -38px rgba(#5062D3, .5);
+    border-radius: 20px;
+    max-width: 606px;
+
+    a {
+        padding: 50px 50px 40px; 
+        display: flex;
+        flex-direction: column;
+        
+        .title {
+            font-size: 25.5px;
+            color: #111127;
+            font-weight: bold;
+        }
+
+        .alt-title {
+            font-size: 16px;
+            color: rgba( #111127, .7);
+            margin-top: 5px;
+        }
+
+        p {
+            color: #111127;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 25px 0;
+        }
+
+        .tag {
+            display: flex;
+            flex-wrap: wrap;
+            span {
+                background: #E7EAFB;
+                padding: 7px 20px;
+                border-radius: 22px;
+                color: #111127;
+                margin: 0 10px 10px 0;
+                font-size: 14px;
+
+                &:hover {
+                    background:darken(#E7EAFB,3%) ;
+                }
+            }
+        }
+    }
+}
