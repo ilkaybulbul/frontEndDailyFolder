@@ -25,7 +25,7 @@ body {
     box-shadow: 0 21px 87px -38px rgba(#5062D3, .5);
     border-radius: 20px;
     max-width: 606px;
-
+    margin-bottom: 30px;
     a {
         padding: 50px 50px 40px; 
         display: flex;
@@ -37,7 +37,7 @@ body {
             font-weight: bold;
         }
 
-        .alt-title {
+        .position {
             font-size: 16px;
             color: rgba( #111127, .7);
             margin-top: 5px;
@@ -67,4 +67,69 @@ body {
             }
         }
     }
+}
+
+.job-items {
+    display: flex;
+    flex-direction: column;
+    max-width: 734px;
+
+    li {
+        margin-bottom: 15px;
+        a {
+            display: flex;
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px 45px 20px 20px;
+            align-items: center;
+            transition: 300ms transform;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+            .avatar {
+                min-width: 64px;
+                margin-right: 15px;
+                height: 64px;
+                border-radius: 50%;
+                font-size: 30px;
+                font-weight: bold;
+                border: 2px solid #E7EAFB;
+                display: grid;
+                place-items: center;
+                color: var(--color);
+            }
+            .location {
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                opacity: .6;
+
+                img {
+                    height: 26px;
+                    width: 26px;
+                    color: #111127;
+                    margin-right: 5px;
+                    font-size: 16px;
+                }
+            }
+            .detail {
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #111127;
+                    margin-bottom: 9px;
+                }
+                .position {
+                    font-size: 16px;
+                    color: rgba( #111127, .7);
+                }
+
+            }
+        }
+    }
+
+    
 }
