@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+    <title>Kredi Hesaplama Formu</title>
+</head>
+<body>
+    <h1 class="header-1">Kredi Tutarı Hesaplama</h1>
+    <div class="wrapper">
+        <div class="coast">
+        <span>Çekilecek Kredi Tutarı:</span>
+        <input type="text" id="tutar">
+        </div>
+        <div class="mounth">
+            <span>Geri Ödeme taksit sayısı:</span>
+        <label for="ay"></label>
+        <select class="select-menu" name="" id="vade">
+            <option class="option" value="12">12</option>
+            <option class="option" value="24">24</option>
+            <option class="option" value="36">36</option>
+            <option class="option" value="48">48</option>
+        </select>
+        </div>
+        <div class="calculate-1">
+            <button type="button" class="calculate" onclick="krediHesapla();">Hesapla</button>
+            <span id="sonuc" class="result"></span>
+            <span id="sonuc2" class="result"></span>
+        </div>
+        
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
